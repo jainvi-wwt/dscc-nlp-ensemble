@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas": 1
+  },
+   "mappings": {
+    "dynamic": "true",
+    "_source": {
+      "enabled": "true"
+    },
+    "properties": {
+      "cord_uid": {
+        "type": "text"
+      },
+      "title": {
+        "type": "text"
+      },
+      "abstract": {
+        "type": "text"
+      },
+      "tm_doc_vec": {
+        "type": "dense_vector",
+        "dims": 100
+      },
+      "tfidf_doc_vec": {
+        "type": "dense_vector",
+        "dims": 300
+      },
+      "bert_doc_vec": {
+        "type": "dense_vector",
+        "dims": 768
+      },
+      "w2v_doc_vec": {
+        "type": "dense_vector",
+        "dims": 300
+      },
+      "scibert_doc_vec": {
+        "type": "dense_vector",
+        "dims": 768
+      },
+      "d2v_doc_vec": {
+        "type": "dense_vector",
+        "dims": 300
+      }
+    }
+  }
+}
